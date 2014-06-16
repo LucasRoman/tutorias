@@ -6,11 +6,7 @@ class Triangulo
 	end
 
 	def valid?
-		if @a+@b > @c && @a+@c > @b && @b+@c > @a
-			true
-		else
-		 	false
-		end
+		@a+@b > @c && @a+@c > @b && @b+@c > @a
 	end
 end
 

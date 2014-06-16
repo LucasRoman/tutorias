@@ -16,16 +16,16 @@ end
 
 describe '#triangulo' do
 
-  it 'triangulo initialize' do
-    expect(Triangulo.new 1, 2, 3).to eq 2
-  end
-
   it 'triangulo valid should be true when sizes are 1, 2 and 3' do
     expect(Triangulo.new(1, 2, 3).valid?).to eq true
   end
 
   it 'triangulo valid should be false when sizes are 1, 2 and 8' do
     expect(Triangulo.new(1, 2, 8).valid?).to eq false
+  end
+
+  it 'triangulo valid should be false when sizes are 1, 2 and 8' do
+    expect(Triangulo.new(4, 5, 6).valid?).to eq true
   end
   
 end
