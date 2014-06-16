@@ -2,7 +2,7 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 
 begin
-  require 'string_to_a'
+  require 'string_foo'
 rescue LoadError
   puts <<-INSTRUCTIONS
     Escribir el método foo para la clase String, de forma que String.new.foo retorne el string “foo”
