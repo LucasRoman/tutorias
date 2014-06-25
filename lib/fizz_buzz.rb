@@ -1,15 +1,15 @@
 def fizz_buzz(n)
-	a = []
-	n.times do |n|
-		i = n+1
+
+	(1..n).map { |i|
+		
 		i = case 
-		when (i % 3 == 0 && i % 5 == 0)	then a << 'FizzBuzz'
-		when (i % 3 == 0) then a << 'Fizz'
-		when (i % 5 == 0) then a << 'Buzz'
-		else a << i
-		end
-	end
-	a
+					when (i % 3 == 0 && i % 5 == 0)	then 'FizzBuzz'
+					when (i % 3 == 0) then 'Fizz'
+					when (i % 5 == 0) then 'Buzz'
+					else i
+				end
+	}
+	
 end
 
 #puts fizz_buzz 15
