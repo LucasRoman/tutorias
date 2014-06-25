@@ -1,6 +1,6 @@
 class String
 	def foo
-		["foo"]
+		"foo"
 	end
 end
 
